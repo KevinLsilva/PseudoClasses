@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pts-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classe</title>
+    <link rel="stylesheet" href="../CSS/PseudoClasses.css">
+</head>
+<body>
+
+    <section>
+        <h1>Pseudo-classes</h1>
+
+        <p>Pseudo-classes são recursos que o CSS disponibiliza para selecionar elementos específicos na tela ou com base em suas características sem a necessidade de criarmos classes próprias para eles. É como se o browser já colocasse neles algumas classes especiais que estariam disponíveis para nós.
+        Vejamos algumas:</p>
+        <br>
+
+        <p>
+            <strong>e:first-child</strong> <span>= pega o elemento (e) que seja primeiro filho de seu elemento-pai.</span><br>
+            <strong>e:last-child</strong> <span>= pega o elemento (e) que seja último filho de seu elemento-pai</span><br>  
+            <strong>e:first-of-type</strong> <span>= pega o elemento (e) que seja primeiro filho levando em conta seu tipo</span><br>
+            <strong>e:last-of-type</strong> <span> = pega o elemento (e) que seja último filho levando em conta seu tipo</span><br>
+            <strong>e:hover</strong> <span>= ativa a estilização aplicada ao elemento (e) quando o mouse está sobre ele</span><br>
+            <strong>e:nth-child(n)</strong> <span>= serve como um contador para selecionar os elementos (e)</span><br>
+       </p>
+       <p>
+         Para uma referência completa das pseudo-classes disponíveis visite <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">W3Schools</a>
+       </p>
+       <br>
+       <hr>
+
+       <div class="primeiro-filho ultimo-filho">
+           <p>Paragráfo 1</p>
+           <p>Paragráfo 2</p>
+           <p>Paragráfo 3</p>
+           <p>Paragráfo 4</p>
+           <p>Paragráfo 5</p>
+       </div>
+
+       <div class="primeiro-do-tipo ultimo-do-tipo">
+           <span>Span é o primeiro filho</span>
+           <p>Paragráfo 1 (primeiro filho do tipo paragráfo)</p>
+           <p>Paragráfo 2</p>
+           <p>Paragráfo 3</p>
+           <p>Paragráfo 4</p>
+           <p>Paragráfo 5</p>
+           <div>
+               <a href="#">Link é o primeiro filho</a>
+               <span>Span é o Segundo filho</span>
+               <p>Paragráfo 1(primeir filho do tipo paragráfo)</p>
+               <p>último paragráfo</p>
+           </div>
+       </div>
+
+       <div class="listrado">
+            <p>Paragráfo 1</p>
+            <p>Paragráfo 2</p>
+            <p>Paragráfo 3</p>
+            <p>Paragráfo 4</p>
+            <p>Paragráfo 5</p>
+            <p>Paragráfo 6</p>
+            <p>Paragráfo 7</p>
+            <p>Paragráfo 8</p>
+            <p>Paragráfo 9</p>
+            <p>Paragráfo 10</p>
+       </div>
+
+       <div class="listrado-3n3">
+            <p>Paragráfo 1</p>
+            <p>Paragráfo 2</p>
+            <p>Paragráfo 3</p>
+            <p>Paragráfo 4</p>
+            <p>Paragráfo 5</p>
+            <p>Paragráfo 6</p>
+            <p>Paragráfo 7</p>
+            <p>Paragráfo 8</p>
+            <p>Paragráfo 9</p>
+            <p>Paragráfo 10</p>
+        </div>
+
+        <div>
+            <div>
+                <label for="mail">Campo Requerido</label>
+                <input type="mail" required>
+            </div>
+
+            <div>
+                <input type="radio" checked="checked">Masculino
+            </div>
+
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <article class="tabs">
+
+            <a href="#Link1">Section 1</a>
+            <a href="#Link2">Section 2</a>
+            <a href="#Link3">Section 3</a>
+
+                <div id="Link1">
+                    <h3>Titulo de 1</h3>
+                    <p>Conteúdo 1</p>
+                </div>
+
+                <div id="Link2">
+                    <h3>Titulo de 2</h3>
+                    <p>Conteúdo 2</p>
+                </div>
+                
+                <div id="Link3">
+                    <h3>Titulo de 3</h3>
+                    <p>Conteúdo 3</p>
+                </div>
+
+        </article>
+    </section>
+    
+</body>
+</html>

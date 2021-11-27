@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    background:lightblue;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid silver;
+    padding: 20px;
+    background:white;
+    margin-top:20px;
+
+}
+div {
+    padding:15px;
+    margin: 15px 0;
+    background: #eee;
+}
+
+.primeiro-filho p:first-child{
+    color: red;
+    font-weight: bolder;
+}
+.ultimo-filho p:last-child{
+    color:green;
+    font-weight: bolder;
+    
+}
+
+.primeiro-do-tipo p:first-of-type{
+    background-color:aquamarine;
+}
+
+.ultimo-do-tipo p:last-of-type{
+    background-color:lightcoral;
+}
+.listrado p:nth-child(even){
+    background:cadetblue;
+    color:wshite;
+}
+.listrado-3n3 p:nth-child(3n){
+    background: coral;
+    color: white;
+}
+
+input:required{
+    background: lightyellow;
+}
+
+input[type=mail]:focus{
+    outline: 2px solid green;
+}
+
+input:checked{
+    height: 20px;
+    width: 20px;
+}
+
+.tabs div {
+    display: none; 
+    
+}
+.tabs a:hover{
+    font-size: 20px;
+}
+.tabs div:target{
+    display: block;
+    
+}
